@@ -1,6 +1,6 @@
 Name:           fros
 Version:        1.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Universal screencasting frontend with pluggable support for various backends
 
 %global commit 60d9d1c5578cd32f29ce85afbe4f6c543a97b313
@@ -72,5 +72,8 @@ CFLAGS="$RPM_OPT_FLAGS" %{__python} setup.py build
 %{python_sitelib}/pyfros/plugins/*gnome.*
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.0-2
+- Mass rebuild 2013-12-27
+
 * Fri May 31 2013 Jiri Moskovcak <jmoskovc@redhat.com> 1.0-1
 - initial rpm
